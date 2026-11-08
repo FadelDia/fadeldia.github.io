@@ -102,7 +102,6 @@ h1 {
 
 .guide-title {
   max-width: none;
-  font-size: clamp(2rem, 4.5vw, 4rem);
   white-space: nowrap;
 }
 
