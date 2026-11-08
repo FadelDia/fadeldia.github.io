@@ -1,46 +1,105 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Robotics Organizers</title>
+  <meta name="description" content="Guides and custom organizers for FTC robotics teams.">
+  <title>BenchKit — Tools for FTC Teams</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
-  <header>
-    <nav aria-label="Main navigation">
-      <a href="#guide">FTC Guide</a>
-      <a href="#containers">Containers</a>
-      <a href="#about">About</a>
-      <a href="#suggestions">Suggestions</a>
-    </nav>
 
-    <h1>Useful tools for FTC teams</h1>
-    <p>Guides and custom 3D-printed organizers for robotics teams.</p>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="BenchKit home">BenchKit<span>.</span></a>
+
+    <nav class="navigation" aria-label="Main navigation">
+      <button class="nav-button active" type="button" data-page="guide">FTC Guide</button>
+      <button class="nav-button" type="button" data-page="containers">Containers</button>
+      <button class="nav-button" type="button" data-page="about">About</button>
+      <button class="nav-button" type="button" data-page="suggestions">Suggestions</button>
+    </nav>
   </header>
 
   <main>
-    <section id="guide">
-      <h2>FTC Guide</h2>
-      <p>Beginner-friendly setup guides and troubleshooting for FTC teams.</p>
+    <section id="guide" class="page">
+      <p class="eyebrow">FOR FTC TEAMS</p>
+      <h1>Build, learn, and keep your parts organized.</h1>
+      <p class="intro">
+        Friendly guides and practical ideas for robotics teams.
+        This site is a work in progress.
+      </p>
+
+      <div class="content-card">
+        <h2>FTC Guide</h2>
+        <p>
+          I’m working on beginner-friendly setup guides and troubleshooting
+          notes for FTC teams.
+        </p>
+        <p class="note">
+          Guide content is still being developed. For official instructions,
+          check the resources provided by FIRST.
+        </p>
+      </div>
     </section>
 
-    <section id="containers">
-      <h2>Containers</h2>
-      <p>I’m exploring customizable organizers for screws and robotics parts.</p>
-      <p>These are prototypes, not available to order yet.</p>
+    <section id="containers" class="page" hidden>
+      <p class="eyebrow">IN DEVELOPMENT</p>
+      <h1>Containers designed around your parts.</h1>
+      <p class="intro">
+        I’m exploring customizable 3D-printed organizers for screws,
+        electronics, and robotics tools.
+      </p>
+
+      <div class="content-card">
+        <h2>Prototype ideas</h2>
+        <ul>
+          <li>Small containers with adjustable compartments</li>
+          <li>Organizers sized for a team’s specific parts</li>
+          <li>Stackable boxes for a robotics toolbox</li>
+        </ul>
+        <p class="note">These are ideas and prototypes—not available to order.</p>
+      </div>
     </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>I’m learning electronics, 3D design, and web development by making useful things for robotics teams.</p>
+    <section id="about" class="page" hidden>
+      <p class="eyebrow">ABOUT THIS PROJECT</p>
+      <h1>Made by a student who likes building things.</h1>
+      <p class="intro">
+        I’m learning electronics, 3D design, and web development, and
+        exploring how those skills can help robotics teams.
+      </p>
+
+      <div class="content-card">
+        <h2>The goal</h2>
+        <p>
+          Make useful, thoughtfully designed tools for FTC teams—and share
+          what I learn along the way.
+        </p>
+      </div>
     </section>
 
-    <section id="suggestions">
-      <h2>Suggestions</h2>
-      <p>What parts or tools are difficult for your team to organize?</p>
-      <a href="PASTE-YOUR-FORM-LINK-HERE">Suggest an idea</a>
+    <section id="suggestions" class="page" hidden>
+      <p class="eyebrow">HELP SHAPE THE PROJECT</p>
+      <h1>What would make your team’s work easier?</h1>
+      <p class="intro">
+        Suggest a storage problem, organizer, or guide that would be useful
+        to your team.
+      </p>
+
+      <div class="content-card">
+        <h2>Suggest an idea</h2>
+        <p>
+          Add your suggestion-form link here when you’ve created one.
+          Don’t collect information you don’t need.
+        </p>
+        <!-- Replace the paragraph above with a link to your form when ready. -->
+      </div>
     </section>
   </main>
+
+  <footer>
+    <p>BenchKit · A student project in progress</p>
+  </footer>
 </body>
 </html>
