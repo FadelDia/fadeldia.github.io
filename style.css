@@ -161,9 +161,11 @@ footer {
     flex-direction: column;
   }
 
-  .navigation {
-    width: 100%;
-  }
+.navigation {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 
   .nav-button {
     padding: 8px 10px;
