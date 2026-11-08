@@ -25,7 +25,7 @@ body {
 }
 
 .site-header {
-  width: min(1100px, 92%);
+  width: min(1400px, calc(100% - 64px));
   margin: 0 auto;
   padding: 24px 0;
   display: flex;
@@ -75,7 +75,7 @@ body {
 }
 
 main {
-  width: min(900px, 88%);
+  width: min(1200px, calc(100% - 64px));
   min-height: 70vh;
   margin: 0 auto;
   padding: 70px 0;
@@ -93,22 +93,33 @@ main {
 }
 
 h1 {
-  max-width: 800px;
+  max-width: 900px;
   margin: 12px 0;
-  font-size: clamp(2.4rem, 7vw, 4.8rem);
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
   line-height: 1.08;
   letter-spacing: -0.04em;
 }
 
+.guide-title {
+  max-width: none;
+  font-size: clamp(2rem, 4.5vw, 4rem);
+  white-space: nowrap;
+}
+
+.guide-title span {
+  display: inline;
+}
+
 .intro {
-  max-width: 680px;
+  max-width: 900px;
   margin: 20px 0 36px;
   color: var(--muted);
   font-size: 1.15rem;
 }
 
 .content-card {
-  max-width: 720px;
+  width: 100%;
+  max-width: 1000px;
   padding: 26px;
   border: 1px solid var(--border);
   border-radius: 16px;
@@ -135,7 +146,7 @@ h1 {
 }
 
 footer {
-  width: min(1100px, 92%);
+  width: min(1400px, calc(100% - 64px));
   margin: 0 auto;
   padding: 18px 0 30px;
   border-top: 1px solid var(--border);
@@ -145,6 +156,7 @@ footer {
 
 @media (max-width: 700px) {
   .site-header {
+    width: 90%;
     align-items: flex-start;
     flex-direction: column;
   }
@@ -158,10 +170,23 @@ footer {
   }
 
   main {
+    width: 90%;
     padding: 48px 0;
+  }
+
+  .guide-title {
+    white-space: normal;
+  }
+
+  .guide-title span {
+    display: block;
   }
 
   .content-card {
     padding: 20px;
+  }
+
+  footer {
+    width: 90%;
   }
 }
