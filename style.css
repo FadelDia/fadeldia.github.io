@@ -124,6 +124,13 @@ h1 {
   border-radius: 16px;
   background: var(--surface);
 }
+  .product-image {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+  }
 
 .content-card h2 {
   margin-top: 0;
@@ -189,13 +196,5 @@ footer {
 
   footer {
     width: 90%;
-  }
-
-  .product-image {
-    display: block;
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 12px;
   }
 }
